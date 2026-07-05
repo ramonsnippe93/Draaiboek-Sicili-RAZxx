@@ -143,7 +143,7 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:750}
 <section class="page active" id="overzicht">
 <div id="printTitle"><h1>Sicilië camperreis · 7–21 juli 2026</h1></div>
 <h2>Jullie reis in één oogopslag</h2>
-<p class="lead">Laat de kust jullie route bepalen: rustige vissersdorpen, tafels met de voeten in het zand en steden die bij zonsondergang in goudkleurige steen oplichten. Onderweg wacht één bijzondere nacht tussen de wijngaarden van de Etna, en voor de zuidoostkust kiezen jullie zelf tussen het ingetogen Sampieri of het levendigere Marina di Modica.</p>
+<p class="lead">Laat de kust jullie route bepalen: rustige vissersdorpen, tafels met de voeten in het zand en steden die bij zonsondergang in goudkleurige steen oplichten. Onderweg wacht één bijzondere nacht tussen de wijngaarden van de Etna. In het zuidoosten combineren jullie Marzamemi, Vendicari en San Lorenzo vanaf Sunseabeach met Scicli, Modica en Ragusa Ibla vanaf Luminoso.</p>
 <div class="toolbar">
 <button class="btn" onclick="show('kaart')">Route instellen</button>
 <button class="btn alt" onclick="show('dagen')">Dagplanning openen</button>
@@ -162,7 +162,7 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:750}
 </section>
 
 <section class="page" id="kaart"><h2>Routekaart & nachten configureren</h2>
-<p class="lead">Variant A staat vast: San Vito → Marsala → Punta Braccetto → Etna Noord → Tindari → Palermo. Rais Gerbi blijft als optionele Madonie/Finale-stop beschikbaar. Verdeel precies 14 nachten en bekijk de ritten. Afstanden en netto rijtijd worden online via de wegroute berekend.</p>
+<p class="lead">Variant A staat vast: San Vito → Marsala → Punta Braccetto → Marzamemi/Pachino → Etna Noord → Tindari → Palermo. Rais Gerbi blijft als optionele Madonie/Finale-stop beschikbaar. Verdeel precies 14 nachten en bekijk de ritten. Afstanden en netto rijtijd worden online via de wegroute berekend.</p>
 <div class="controls"><div class="toggle"><label><input type="checkbox" id="raisToggle">Rais Gerbi inschakelen</label> — optionele Madonie/Finale-stop.</div>
 <div class="nights" id="nightControls"></div>
 <div class="toolbar"><button class="btn alt" id="resetRoute">Herstel standaardroute</button></div>
@@ -199,7 +199,7 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:750}
 
 <section class="page" id="wildcards">
 <h2>Wildcards · Etna → Luminoso</h2>
-<p class="lead">Avola/Noto en Sunseabeach zijn uit de hoofdroute gehaald. Hieronder alleen campings die ik nu serieus genoeg vind voor de ontbrekende kustschakel na Etna Wine.</p>
+<p class="lead">Sunseabeach is inmiddels als vaste stop in de hoofdroute opgenomen. Hieronder blijven alternatieve kustcampings als naslag staan.</p>
 <div class="grid">
 <div class="card"><h3>1 · La Spiaggetta · Sampieri</h3><p><b>De sterkste kandidaat.</b> Echte campercamping direct aan zee met grote uitgeruste camperplaatsen. ACSI noemt de camping aan zee, bij zandstrand; actuele reviews noemen winkels en restaurants op circa 0,8–1,2 km en een wandeling langs strand/rotsen naar de lungomare van Sampieri.</p><p><b>Waarom sterk:</b> strand, dorp te voet, bar/café en Sampieri-sfeer. <b>Waarom twijfel:</b> ligt dicht bij Luminoso en kan daardoor geografisch dubbel voelen.</p><a class="btn" href="https://la-spiaggetta.it/en/" target="_blank" rel="noopener">Officiële camping ↗</a></div>
 <div class="card"><h3>2 · Camping Di Vita Vera · Marina di Modica</h3><p>Kleine echte camping aan zee met circa 45 touringplaatsen volgens ADAC-informatie. Pitchup plaatst hem ongeveer 1 km van Marina di Modica en noemt directe toegang tot zandstrand en rotskust.</p><p><b>Waarom sterk:</b> meer kustplaatsgevoel en restaurants/supermarkt rond 800 m. <b>Waarom twijfel:</b> eenvoudiger camping en geen volledige camper-service volgens PiNCAMP.</p></div>
@@ -258,7 +258,13 @@ const camps=[
 ["Fornace Penna","Ook vanaf hier te voet of per fiets bereikbaar via het strand; dezelfde iconische Montalbano-locatie als bij Sampieri.","zien","https://slow-sicily.com/fornace-penna-in-scicli-the-allure-of-montalbanos-mannara/"],
 ["Marina di Ragusa fietsen","De enige plek in Sicilië met een echt fietspad langs de kust; huur een fiets bij de haven (Rasi Rent) en rijd langs de witte zandstranden.","sfeer","https://www.google.com/maps/search/?api=1&query=Marina+di+Ragusa+lungomare"],
 ["Pozzallo","Optionele extra kustavond met een andere, iets grotere havenstad-sfeer.","sfeer","https://en.wikipedia.org/wiki/Pozzallo"]]},
-{id:"luminoso",title:"Luminoso Camping",place:"Punta Braccetto",group:"zuidoost",lat:36.81746,lon:14.46606,n:5,optional:null,url:"https://www.campingluminoso.com/en/",gallery:"https://www.campingluminoso.com/en/our-facility/",rating:"4,6/5 · 1.092 Google-reviews",camper:"Echte camping met pitches; officiële site noemt zes accommodatietypen inclusief pitches.",feel:"Verzorgde, kleinschaliger strandcamping; sterkste pure campingfinish.",fac:"privéstrand · 27 privébadkamers · 12 warme douches · zeezicht-jacuzzi",town:"Punta Braccetto zelf is rustig; de waarde zit in Scicli, Modica, Ragusa Ibla en Marina di Ragusa.",tip:"Plan Ragusa Ibla aan het eind van de middag: loop bij zonsondergang de 242 treden van Via Scale op naar Santa Maria delle Scale voor het mooiste uitzicht, en blijf hangen tot de gevels verlicht worden.",spots:[
+{id:"sunsea",title:"Sunseabeach Camping",place:"Marzamemi / Pachino",group:"zuidoost",lat:36.7366,lon:15.1055,n:2,optional:null,url:"https://www.sunseabeach-camping.it/",gallery:"https://www.sunseabeach-camping.it/",rating:"Camping aan zee in de Marzamemi/Pachino-zone",camper:"Echte camping met kampeerplaatsen; geschikt als vaste camperbasis.",feel:"Kustbasis voor Marzamemi, San Lorenzo, Vendicari en het Nero d'Avola-land rond Pachino.",fac:"zee · zwembad · pizzeria · wifi · kampeerplaatsen",town:"Sterke sfeerstap tussen West-Sicilië en Luminoso: vissersdorp, natuurreservaat en stranden.",tip:"Ga laat in de middag naar Marzamemi: eerst door de oude tonnara en Piazza Regina Margherita, daarna aperitivo en diner wanneer het dorp in warm avondlicht komt.",spots:[
+["Marzamemi","Historisch vissersdorp rond de oude tonnara en Piazza Regina Margherita; het mooist vanaf eind middag tot na zonsondergang.","sfeer","https://www.google.com/maps/search/?api=1&query=Marzamemi+Sicilia"],
+["Riserva di Vendicari","Kustnatuurreservaat met wandelroutes, baaien en vogelgebieden. Ga vroeg vanwege de julihitte en neem ruim water mee.","zien","https://www.riserva-vendicari.it/"],
+["San Lorenzo","Helder water en lichte zandstranden ten noorden van Marzamemi; goede stranddag vanaf de camping.","zien","https://www.google.com/maps/search/?api=1&query=San+Lorenzo+beach+Noto+Sicily"],
+["Pachino & Nero d'Avola","Pachino ligt midden in het wijngebied van de Nero d'Avola. Combineer een korte wijnstop met boodschappen voor de camper.","eten","https://www.google.com/maps/search/?api=1&query=winery+Pachino+Nero+d%27Avola"],
+["Portopalo di Capo Passero","Optionele rit naar het uiterste zuidoosten van Sicilië, waar Ionische Zee en Middellandse Zee samenkomen.","zien","https://www.google.com/maps/search/?api=1&query=Portopalo+di+Capo+Passero"]]},
+{id:"luminoso",title:"Luminoso Camping",place:"Punta Braccetto",group:"zuidoost",lat:36.81746,lon:14.46606,n:3,optional:null,url:"https://www.campingluminoso.com/en/",gallery:"https://www.campingluminoso.com/en/our-facility/",rating:"4,6/5 · 1.092 Google-reviews",camper:"Echte camping met pitches; officiële site noemt zes accommodatietypen inclusief pitches.",feel:"Verzorgde, kleinschaliger strandcamping; sterkste pure campingfinish.",fac:"privéstrand · 27 privébadkamers · 12 warme douches · zeezicht-jacuzzi",town:"Punta Braccetto zelf is rustig; de waarde zit in Scicli, Modica, Ragusa Ibla en Marina di Ragusa.",tip:"Plan Ragusa Ibla aan het eind van de middag: loop bij zonsondergang de 242 treden van Via Scale op naar Santa Maria delle Scale voor het mooiste uitzicht, en blijf hangen tot de gevels verlicht worden.",spots:[
 ["Scicli","Topaanrader voor eind middag en avond: rustiger dan Modica en Ragusa, met sfeervolle barokke kerken en smalle straatjes.","zien","https://en.wikipedia.org/wiki/Scicli"],
 ["Modica · Antica Dolceria Bonajuto","Oudste chocoladefabriek van Sicilië (sinds 1880), met koud verwerkte chocolade volgens Azteeks recept. Proef de tavolette met sinaasappel of peperoncino, of een warme cioccolata alla Xicara.","eten","https://www.bonajuto.it/en/"],
 ["Castello di Donnafugata","19e-eeuws neogotisch landhuis met een groot kostuummuseum en een stenen doolhof in de tuin; bekend van Commissario Montalbano. Ga vroeg of laat om de tourbussen voor te zijn, gesloten op maandag.","zien","https://castellodonnafugata.org/visita/"],
@@ -272,7 +278,7 @@ const camps=[
 ["Vemacar","Bevestig de uiterste inlevertijd schriftelijk vooraf.","zien","https://www.vemacar.it/"],
 ["Palermo Airport","Mik op 08:00–08:30 aanwezig voor de vlucht van 11:00.","zien","https://www.google.com/maps/search/?api=1&query=Aeroporto+Falcone+Borsellino+Palermo"]]}
 ];
-const routeOrder=["pineta","lilybeo","luminoso","etnawine","tindari","rais","palermo"];
+const routeOrder=["pineta","lilybeo","luminoso","sunsea","etnawine","tindari","rais","palermo"];
 const routeCamps=routeOrder.map(id=>camps.find(c=>c.id===id));
 const pages=[["overzicht","Overzicht"],["kaart","Kaart & route"],["dagen","Dagen"],["praktisch","Praktisch"],["wijn","Wijn"],["wildcards","Wildcards"],...routeCamps.map(c=>[c.id,c.title])];
 const nav=document.getElementById("nav");
@@ -325,11 +331,11 @@ function active(){return defs.filter(enabled)}
 const defaultState={}; defs.forEach(c=>defaultState[c.id]=c.n);
 function saveRoute(){
  const data={nights:state,rais:document.getElementById("raisToggle").checked};
- localStorage.setItem("sicilieRoute2026v2",JSON.stringify(data));
+ localStorage.setItem("sicilieRoute2026v3",JSON.stringify(data));
 }
 function loadRoute(){
  try{
-  const d=JSON.parse(localStorage.getItem("sicilieRoute2026v2")||"null"); if(!d)return;
+  const d=JSON.parse(localStorage.getItem("sicilieRoute2026v3")||"null"); if(!d)return;
   Object.assign(state,d.nights||{});
   document.getElementById("raisToggle").checked=!!d.rais;
  }catch(e){}
@@ -360,7 +366,7 @@ function draw(){ml.clearLayers();rl.clearLayers();renderDays();const cs=active()
  fetch(`https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`).then(r=>r.json()).then(d=>{const r=d.routes[0];rl.removeLayer(fallback);L.geoJSON(r.geometry,{style:{weight:5,opacity:.8}}).addTo(rl);document.getElementById("totalKm").textContent=Math.round(r.distance/1000)+" km";document.getElementById("totalTime").textContent=fmt(Math.round(r.duration/60));const box=document.getElementById("routeLegs");box.innerHTML="";r.legs.forEach((l,i)=>box.insertAdjacentHTML("beforeend",`<div class="leg"><b>${pts[i].title} → ${pts[i+1].title}</b><br>${Math.round(l.distance/1000)} km · ${fmt(Math.round(l.duration/60))} netto</div>`))}).catch(()=>{document.getElementById("totalKm").textContent="offline";document.getElementById("totalTime").textContent="—"})}
 document.getElementById("raisToggle").addEventListener("change",()=>{saveRoute();controls();draw()});
 document.getElementById("resetRoute").addEventListener("click",()=>{
- localStorage.removeItem("sicilieRoute2026v2"); location.reload();
+ localStorage.removeItem("sicilieRoute2026v3"); location.reload();
 });
 document.querySelectorAll("[data-check]").forEach(cb=>{
  cb.checked=localStorage.getItem("check_"+cb.dataset.check)==="1";
